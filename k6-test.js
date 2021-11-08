@@ -6,8 +6,8 @@ import { Rate } from "k6/metrics";
 var failureRate = new Rate("check_failure_rate");
 
 
-const FE_URL = process.env.FE_URL
-const BE_URL = process.env.BE_URL
+const FE_URL = "https://jobserm.github.io"
+const BE_URL = "https://api-jobserm-cjtim.cloud.okteto.net"
 
 // Options
 export let options = {
